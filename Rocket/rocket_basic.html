@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    width: 500px;
+    height: 500px;
+  }
+
+  .icon path {
+    stroke: #333;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  </style>
+  <link rel="stylesheet" href="./icon.css">
+  <title>Rocket</title>
+</head>
+<body>
+  <div>
+    <svg viewBox="0 0 100 100">
+      <g class="icon">
+        <path d="M35 70 h 30" />
+        <path d="M35 70 a 65,65 0 0 1 15 -55" />
+        <path d="M50 15 a 65,65 0 0 1 15 55" />
+
+        <path d="M35 70 L25 80 L20 60 h 13" />
+        <path d="M65 70 L75 80 L80 60 h -13" />
+ 
+        <path d="M45 30 a 1,1 0 0 1 10 0 a 1,1 0 0 1 -10 0" />
+
+        <path d="M42 75 v 10" />
+        <path d="M50 75 v 18" />
+        <path d="M58 75 v 10" />
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
