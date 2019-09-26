@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  --anim-duration-cloud-fast: 2s;
+  --anim-duration-cloud-slow: 4s;
+  --anim-duration-rocket: .4s;
+  --color-stop-top: #f36d28;
+  --color-stop-bottom: #efe550;
+  --color-cloud: #fff;
+  --color-rocket-window: #ddd;
+  --color-rocket-body: #5fffa2;
+  --color-rocket-aisle: #1af71b;
+  --color-flames: 
+  
+}
+
+
+#background {
+  fill: url('#sky');
+}
+
+.rocket path,
+.cloud path {
+  stroke: #333;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rocket path {
+  fill: transparent;
+}
+
+.cloud path {
+  fill: var(--color-cloud);
+}
+
+.rocket #rocket-body {
+  fill: var(--color-rocket-body);
+}
+
+.rocket #window {
+  fill: var(--color-rocket-window);
+}
+
+.rocket .aisle {
+  fill: var(--color-rocket-aisle);
+}
+
+.cloud #cloud-right {
+  animation: cloudMove var(--anim-duration-cloud-fast) 2s infinite;
+}
+
+.cloud #cloud-left {
+  animation: cloudMove var(--anim-duration-cloud-slow) infinite;
+}
+
+@keyframes cloudMove {
+  0% { transform: translate(0); }
+  100% { transform: translate(0,170px); }
+}
+
+.rocket {
+  animation: rocketMove var(--anim-duration-rocket) 0s infinite;
+}
+
+@keyframes rocketMove {
+  0% { transform: translate(0);}
+  50% { transform: translate(0, 3px); }
+  100% { transform: translate(0); }
+}
+
+.rocket .flames {
+  animation: flamesReduce var(--anim-duration-rocket) infinite;
+}
+
+@keyframes flamesReduce {
+  0% { transform: scale(1); transform-origin: 50% 50%;}
+  50% { transform: scale(0.9); transform-origin: 50% 50%;}
+  100% { transform: scale(1); transform-origin: 50% 50%;}
+}
