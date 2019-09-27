@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --stroke-border: blue;
+  --stroke-icon: #333;
+  --stroke-width: 2px;
+  --color-primary: #50d9ff;
+  --color-secondary: #6450ff;
+  --color-third: #50ff76;
+  --color-complementary: #ff5950;
+}
+
+#defs {
+  display: none;
+}
+
+div {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  border: 2px solid var(--stroke-border);
+}
+
+#circle {
+  stroke: var(--stroke-icon);
+  stroke-width: var(--stroke-width);
+  fill: transparent;
+}
+
+.rocket {
+  path {
+    stroke: var(--stroke-icon);
+    stroke-width: var(--stroke-width);
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  #rocket-aisle path {
+    fill: var(--color-secondary);
+  }
+
+  #rocket-body path {
+    fill: var(--color-primary);
+  }
+
+  #rocket-window path {
+    fill: var(--color-third);
+  }
+
+  #rocket-flames path {
+    stroke: var(--color-complementary);
+  }
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <svg id="defs" viewBox="0 0 0 0">
+    <defs>
+      <path id="circle" d="M5 50 a 1,1 0 0 1 90 0 a 1,1 0 0 1 -90 0" />
+    </defs>
+  </svg>
+
+  <div>
+    <svg viewBox="0 0 100 100">
+      <use href="#circle" />
+      <g class="rocket">
+        <g id="rocket-aisle">
+          <path d="M35 70 L25 80 L20 60 h 13" />
+          <path d="M65 70 L75 80 L80 60 h -13" />
+        </g>
+        <g id="rocket-body">
+          <path id="rocket-body" d="M35 70 a 65,65 0 0 1 15 -55 a 65,65 0 0 1 15 55 h -30" />
+        </g>
+        <g id="rocket-window">
+          <path d="M45 30 a 1,1 0 0 1 10 0 a 1,1 0 0 1 -10 0" />
+        </g>
+        <g id="rocket-flames">
+          <path d="M42 75 v 10" />
+          <path d="M50 75 v 16" />
+          <path d="M58 75 v 10" />
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div id="div2"></div>
+</body>
+</html>
