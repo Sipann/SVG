@@ -55,3 +55,27 @@ div {
   }
 }
 
+.icon-bin {
+  path#bin-cover,
+  path#bin-body {
+    stroke: #333;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  path#bin-body {
+    fill: var(--color-secondary);
+  }
+
+  path#bin-cover {
+    fill: var(--color-secondary);
+    transition: transform 0.4s;
+    transform-origin: 85% 30%;
+  }
+
+  &:hover #bin-cover {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+}
+
