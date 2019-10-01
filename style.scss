@@ -79,3 +79,50 @@ div {
   }
 }
 
+.palm-tree {
+
+  path {
+    stroke-width: 2px;
+    stroke: #333;
+    fill: #a78063;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+
+  #coconuts circle {
+    fill: #ffd877;
+    stroke: #333;
+  }
+
+  #leaves path {
+    stroke: #333;
+    fill: #06ff06;
+  }
+
+  #leaves path:nth-child(2),
+  #leaves path:nth-child(5) {
+    fill: #5de47c;
+  }
+
+  .group1,
+  .group2 {
+    transform-origin: 45% 24%;
+  }
+
+  .group1 {
+    transition: transform .8s ease-in-out;
+  }
+
+  .group2 {
+    transition: transform .6s 0.2s ease-in-out;
+  }
+
+  &:hover .group1 {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  &:hover .group2 {
+    transform: rotate3d(0, 0, 1, 20deg);
+  }
+}
