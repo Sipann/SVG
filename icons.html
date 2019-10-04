@@ -70,5 +70,44 @@
       </g>
     </svg>
   </div>
+
+  <div class="lamp">
+    <svg viewBox="0 0 100 100">
+      <defs>
+        <linearGradient id="light2">
+          <stop offset="50%" stop-color="rgba(255,255,0,0.5)" />
+          <stop offset="100%" stop-color="white" />
+        </linearGradient>
+      </defs>
+      <g id="lamp-whole">
+        <g id="lamp-rod">
+          <g id="top">
+            <path id="rod-top" d="M77 79 v -35 h 7 v 35 z" />
+            <circle class="axe" cx="80.5" cy="42" r="5" />
+            <g id="cap" class="off">
+            <path id="bulb-light" d="M87 35 l 30 -30 v 58 l -30 -30 z" fill="url(#light2)" />
+            <path id="bulb" d="M97 29 a 1,1 0 0 1 0 10" />
+            <path id="button" d="M72 33 h-3 v2 h3 z" />
+            <path id="lampshade" d="M82 40 h 10 q 2 5 7 5 v -22 q -5.5 0 -7 5 h-20 v 12 z" />
+          </g>
+        </g>
+        <rect id="bottom" x="40" y="75" width="40" height="7" />
+        <circle class="axe" cx="77" cy="79" r="3" />
+       </g>
+       <g id="lamp-foot">
+          <path d="M25 90 a 1,1 0 0 1 30 0 z" />
+        </g> 
+      </g>
+    </svg>
+  </div>
+  
+  <script>
+  let lamp = document.querySelector('.lamp svg');
+  let lampWhole = document.querySelector('#lamp-whole');
+  lamp.addEventListener('mouseover', () => {
+    lampWhole.classList.add('opening');
+  });
+  </script>
+
 </body>
 </html>
