@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 500px;
+  height: 500px;
+}
+
+
+#lamp-whole {
+  --color-lamp-primary: #333;
+  --color-lamp-secondary: rgb(239,109,109,1);
+  --lamp-duration: .4s;
+  --lamp-step1: calc(var(--lamp-duration) * 1);
+  --lamp-step2: calc(var(--lamp-duration) * 2);
+  --lamp-step3: calc(var(--lamp-duration) * 3);
+  --lamp-easing: ease-in-out;
+}
+
+#lamp-whole path,
+#lamp-whole rect,
+#lamp-whole circle {
+  opacity: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--color-lamp-primary);
+  stroke-width: 2px;
+}
+
+#lamp-whole {
+  transform: translateX(-10px);
+
+  #rod-top,
+  #lampshade,
+  #bottom,
+  .axe {
+    fill: var(--color-lamp-secondary);
+  }
+
+  #lamp-rod {
+    transform-origin: 40% 81%;
+    transform: rotate3d(0,0,1, -73deg);
+    transition: transform var(--lamp-duration) var(--lamp-easing);
+  }
+
+  #top {
+    transform-origin: 79% 77%;
+    transform: rotate3d(0,0,1, 207deg);
+    transition: transform var(--lamp-duration) var(--lamp-step1) var(--lamp-easing);
+  }
+
+  #cap {
+    transform-origin: 81% 40%;
+    transform: rotate3d(0,0,1, -36deg);
+    transition: transform var(--lamp-duration) var(--lamp-step2) var(--lamp-easing);
+  }
+
+  #bulb {
+    fill: none;
+    stroke: var(--color-lamp-primary);
+    stroke-width: 1px;
+    transition: all var(--lamp-duration) var(--lamp-step3);
+  }
+
+  #button {
+    stroke: #770b44;
+  }
+
+  #bulb-light {
+    stroke: none;
+    opacity: 0;
+    transition: opacity .2s var(--lamp-step3);
+  }
+
+
+  &.opening {
+    #lamp-rod {
+      transform: rotate3d(0,0,1, -100deg);
+    }
+
+    #top {
+      transform: rotate3d(0,0,1, 175deg);
+    }
+
+    #cap {
+      transform: rotate3d(0,0,1, -12deg);
+    }
+
+    #bulb {
+      stroke: #f7e43c; 
+    }
+
+    #button {
+      animation: click var(--lamp-duration) var(--lamp-step3);
+    }
+
+    #bulb-light {
+      opacity: 1;
+    }
+  }
+}
+
+#lamp-foot path {
+  fill: var(--color-lamp-secondary);
+}
+
+@keyframes click {
+  50% { transform: translateX(5px); }
+}
+
+
