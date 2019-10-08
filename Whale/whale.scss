@@ -1,0 +1,22 @@
+* {
+  --stroke-primary: #333;
+  --fill-primary: rgb(15, 238, 211);
+  --fill-secondary: #ddd;
+}
+
+#whale {
+  stroke: var(--stroke-primary);
+  stroke-width: 2px;
+  fill: var(--fill-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  #whale-eye {
+    stroke: none;
+    fill: var(--stroke-primary);
+  }
+
+  #whale-mouth {
+    fill: var(--fill-secondary);
+  }
+}

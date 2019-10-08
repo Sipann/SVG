@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="whale.css">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    width: 500px;
+    height: 500px;
+  }
+
+  #frame path {
+    stroke: #000;
+    stroke-width: 1px;
+    opacity: 0;
+  }
+
+  #frame path.medium {
+    stroke-width: 2px;
+  }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <svg viewBox="0 0 100 100">
+
+      <g id="draw">
+          <!-- INSERT NEW SHAPE HERE ON NEW FILE -->
+        <g id="whale">
+          <g id="whale-body">
+            <path d="M5 50 a 1,1 0 0 1 60 -5 
+            q 3 10 8 -10 
+            q -12 -7 -7 -17 
+            q 8 -3 12 7 
+            q 5 -7 12 -7 
+            q 4 14 -7 17
+            q -5 30 -32 40
+            a 1.5,1 0 0 1 -10 2
+            q -16 5 -30 -7
+            q 0 -2 3 -2
+            l -5 -9 
+            q -3 1 -3 -2
+            q 0 0 -1 -6" />
+          </g>
+          <g id="whale-mouth">
+            <path id="mouth" d="M 10 58.7 
+            q 15 0 30 -7
+            q -15 20 -27 16
+            l -3.5 -8 z" />
+            <path id="smile" d="M38 48 q 0 2.5 5 5" />
+          </g>
+          <g id="whale-eye">
+            <path d="M30 40 a 1 2 0 0 1 2.5 0 a 1 2 0 0 1 -2.5 0" />
+          </g>
+          <g id="whale-paddle">
+            <path d="M41 77 q -5 -3 -5 -10" />
+            <path d="M51.1 75 c 0 -5 -3 -6 -5 -10" />
+          </g>
+          <g id="drops">
+            <path d="M 25 15 q -4 0 -5 -3 q 2 -5 5 3" />
+            <path d="M 30 12 q -3 -4 -1 -5 q 3 1 1 5"  />
+            <path d="M 35 15 q 0 -5 5 -5 q 4 2 -5 5" />
+          </g>
+        </g>
+      </g>
+
+
+      <g id="frame">
+        <path d="M0 0 h 100"/>
+        <path d="M0 10 h 100"/>
+        <path d="M0 20 h 100"/>
+        <path d="M0 30 h 100"/>
+        <path d="M0 40 h 100"/>
+        <path class="medium" d="M0 50 h 100"/>
+        <path d="M0 60 h 100"/>
+        <path d="M0 70 h 100"/>
+        <path d="M0 80 h 100"/>
+        <path d="M0 90 h 100"/>
+        <path d="M0 100 h 100"/>
+        <path d="M0 0 v 100" />
+        <path d="M10 0 v 100" />
+        <path d="M20 0 v 100" />
+        <path d="M30 0 v 100" />
+        <path d="M40 0 v 100" />
+        <path class="medium" d="M50 0 v 100" />
+        <path d="M60 0 v 100" />
+        <path d="M70 0 v 100" />
+        <path d="M80 0 v 100" />
+        <path d="M90 0 v 100" />
+        <path d="M100 0 v 100" />
+      </g>
+
+      
+
+    </svg>
+  </div>
+</body>
+</html>
