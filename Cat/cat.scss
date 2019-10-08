@@ -1,0 +1,20 @@
+* {
+  --stroke-primary: #333;
+  --fill-primary: rgb(15, 238, 115);
+}
+
+#cat {
+  stroke: var(--stroke-primary);
+  stroke-width: 2px;
+  fill: var(--fill-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: translate(0,-1px);
+
+  #cat-head {
+    .eyes {
+      stroke: none;
+      fill: var(--stroke-primary);
+    }
+  }
+}
