@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="turtle.css">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    width: 500px;
+    height: 500px;
+  }
+
+  #frame path {
+    stroke: #000;
+    stroke-width: 1px;
+    opacity: 0;
+  }
+
+  #frame path.medium {
+    stroke-width: 2px;
+  }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <svg viewBox="0 0 100 100">
+      <defs>
+        <mask id="mask-shell">
+          <path d="M38 61 a 1,1 0 0 1 55 0" fill="white" />
+        </mask>
+      </defs>
+
+      <g id="draw">
+          <!-- INSERT NEW SHAPE HERE ON NEW FILE -->
+          <g id="turtle">
+
+            <g id="turtle-body">
+              <path d="M99 70 q -5 10 -19 15 c 7 17 -20 17 -15 3 q -10 5 -20 0 c 7 14 -23 14 -15 0 q -10 -10 -8 -40 q -30 -9 -15 -28 M7 20 c 4 -20 44 -20 37 13 l -5 5 q -5 3.5 0 11 q 30 -10 60 21" />
+            </g>
+
+            <g id="turtle-eye">
+              <path d="M18 22 a 1,2 0 0 1 2 0 a 1,2 0 0 1 -2 0" />
+            </g>
+
+            <g id="turtle-smile">
+              <path d="M10 42 q 2.5 0 6 -3  " />
+            </g>
+
+            <g id="turtle-shell">
+              <path d="M38 60 a 1,1 0 0 1 55 0" />
+              <path d="M93 60 
+              c 15 15 -70 15 -55 0 " />
+
+              <path class="scales" d="M52 36 q 15.5 5 26 0 v -10 h -26 v 10" mask="url(#mask-shell)" />
+              <path class="scales" d="M51 41 q 6 2 12 1 q 3 5 1 10 q -9 2 -17 0 q -2 -5 3 -11" />
+              <path class="scales" d="M70 43 q 6 0 12 -1 q 3 5.5 2 10 q -9 2 -16 0 q -1 -5 2 -9" />
+              <path class="scales" d="M43 55 q 6 2 12 2 q 1 5 1 10 q -7 1 -15 -2 q 0 -5 2 -10" />
+              <path class="scales" d="M62 57 q 6 1 12 0 q 1 5 1 10 q -7 2 -15 0 q 0 -5 2 -10" />
+              <path class="scales" d="M80 57 q 6 0 10 -1 q 1 4 1 8 q -7 3 -12 2 q -1 -5 1 -9" />
+            </g>
+          </g>
+      </g>
+
+
+      <g id="frame">
+        <path d="M0 0 h 100"/>
+        <path d="M0 10 h 100"/>
+        <path d="M0 20 h 100"/>
+        <path d="M0 30 h 100"/>
+        <path d="M0 40 h 100"/>
+        <path class="medium" d="M0 50 h 100"/>
+        <path d="M0 60 h 100"/>
+        <path d="M0 70 h 100"/>
+        <path d="M0 80 h 100"/>
+        <path d="M0 90 h 100"/>
+        <path d="M0 100 h 100"/>
+        <path d="M0 0 v 100" />
+        <path d="M10 0 v 100" />
+        <path d="M20 0 v 100" />
+        <path d="M30 0 v 100" />
+        <path d="M40 0 v 100" />
+        <path class="medium" d="M50 0 v 100" />
+        <path d="M60 0 v 100" />
+        <path d="M70 0 v 100" />
+        <path d="M80 0 v 100" />
+        <path d="M90 0 v 100" />
+        <path d="M100 0 v 100" />
+      </g>
+
+      
+
+    </svg>
+  </div>
+</body>
+</html>

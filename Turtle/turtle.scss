@@ -1,0 +1,27 @@
+* {
+  --stroke-primary: #333;
+  --fill-primary: rgb(34, 236, 147);
+  --fill-shell: #dc8e10;
+  --fill-scales: #ffe612;
+}
+
+#turtle {
+  stroke: var(--stroke-primary);
+  stroke-width: 2px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  #turtle-body {
+    fill: var(--fill-primary);
+  }
+
+  #turtle-shell {
+    fill: var(--fill-shell);
+
+    .scales {
+      fill: var(--fill-scales);
+    }
+  }
+  
+}
