@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --monkey-stroke-primary: #333;
+  --monkey-fill-primary: #c46f07;
+  --monkey-fill-secondary: #b4c707;
+  --monkey-fill-tertiary: #c19c07;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  svg {
+    width: 400px;
+    height: 400px;
+    
+    #monkey {
+      stroke: var(--monkey-stroke-primary);
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: var(--monkey-fill-primary);
+
+      .monkey-body-supp,
+      #monkey-mouth {
+        fill: none;
+      }
+
+      #monkey-nose,
+      .monkey-feet {
+        fill: var(--monkey-fill-tertiary);
+      }
+
+      .monkey-ears {
+        fill: var(--monkey-fill-secondary);
+      }
+    }
+  }
+}
