@@ -1,0 +1,21 @@
+#elephant {
+  --elephant-stroke-primary: #333;
+  --elephant-fill-primary: #fd6100;
+  --elephant-fill-secondary: #f9b87b;
+
+  stroke-width: 2px;
+  stroke: var(--elephant-stroke-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+  #elephant-feet,
+  #elephant-body,
+  #elephant-head {
+    fill: var(--elephant-fill-primary);
+  }
+
+  .feet-inner,
+  #elephant-ears {
+    fill: var(--elephant-fill-secondary);
+  }
+}
