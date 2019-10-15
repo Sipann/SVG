@@ -1,0 +1,34 @@
+#bear {
+  --bear-stroke-primary: #333;
+  --bear-fill-primary: #fd6100;
+  --bear-fill-secondary: #f9b87b;
+
+  stroke-width: 2px;
+  stroke: var(--bear-stroke-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  #bear-head {
+    fill: var(--bear-fill-primary);
+  }
+
+  #bear-ears,
+  #bear-body,
+  #bear-arms,
+  #bear-legs {
+    fill:var(--bear-fill-primary);
+  }
+
+  #lips,
+  .ears-inner,
+  .feet-inner,
+  #muzzle {
+    fill: var(--bear-fill-secondary);
+  }
+
+  #nose,
+  .eyes {
+    fill: var(--bear-stroke-primary);
+  }
+}
+
