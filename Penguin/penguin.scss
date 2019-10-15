@@ -1,0 +1,29 @@
+#penguin {
+  --penguin-stroke-primary: #333;
+  --penguin-fill-primary: #fff;
+  --penguin-fill-secondary: #f9b87b;
+
+  stroke-width: 2px;
+  stroke: var(--penguin-stroke-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+  #penguin-arms {
+    fill: var(--penguin-stroke-primary);
+  }
+
+  #penguin-body {
+    fill: var(--penguin-fill-primary);
+  }
+
+  #penguin-black {
+    fill: var(--penguin-stroke-primary);
+  }
+
+  #penguin-nose,
+  #penguin-feet {
+    fill: var(--penguin-fill-secondary);
+  }
+
+  
+}
