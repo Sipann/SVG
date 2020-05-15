@@ -1,6 +1,9 @@
 # SVG Icons
 
-A list of home-made SVG Icons in pure inline SVG.
+A list of hand-coded SVG Icons.
+
+## Why?
+Some people do crosswords, others love sudoku. I hand-code SVG. There's nothing wrong with that! 
 
 ___
 
